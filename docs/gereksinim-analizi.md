@@ -18,49 +18,64 @@
 6. **Rezervasyon İptali**
    - Kullanıcılar, rezervasyonlarını belirli bir süre içinde iptal edebilmelidir.
 
-7. **Fiyatlandırma ve Ödeme**
-   - Kullanıcılar, seçtikleri aracın kira ücretini açıkça görebilmeli ve güvenli bir ödeme yapabilmelidir.
+7. **Fiyatlandırma**
+   - Kullanıcılar, seçtikleri aracın kira ücretini açıkça görebilmeli.
 
-8. **Kampanyalar ve İndirimler**
+8. **Ödeme**
+   - Kullanıcılar, güvenli bir ödeme yapabilmelidir.
+
+9. **Kampanyalar ve İndirimler**
    - Kullanıcılar, mevcut kampanya ve indirimleri görebilmeli ve bunlardan faydalanabilmelidir.
 
-9. **Araç Değerlendirme ve Yorumlar**
-   - Kullanıcılar, kiraladıkları araçları değerlendirebilmeli ve yorumlarını paylaşabilmelidir.
+10. **Araç Değerlendirme ve Yorumlar**
+    - Kullanıcılar, kiraladıkları araçları değerlendirebilmeli ve yorumlarını paylaşabilmelidir.
 
-10. **Kullanıcı Profili Düzenleme**
-    - Kullanıcılar, kişisel bilgilerini güncelleyebilmeli ve hesap ayarlarını düzenleyebilmelidir.
+11. **Kullanıcı Profili Güncelleme**
+    - Kullanıcılar, kişisel bilgilerini güncelleyebilmeli.
 
-11. **Araç Konumları ve Şubeler**
+12. **Kullanıcı Hesap Ayarları Düzenleme
+    - Kullanıcılar, hesap ayarlarını düzenleyebilmeli.
+
+13. **Araç Konumları ve Şubeler**
     - Kullanıcılar, araçların bulunduğu konumları ve şubeleri harita üzerinde görebilmelidir.
 
-12. **Araç Sigortaları**
+14. **Araç Sigortaları**
     - Kullanıcılar, kiraladıkları araç için uygun sigorta seçeneklerini inceleyebilmeli ve seçebilmelidir.
 
-13. **Hesap İşlemleri Geçmişi**
+14. **Hesap İşlemleri Geçmişi**
     - Kullanıcılar, hesaplarında daha önce kiraladıkları araçları ve diğer bilgi geçmişini inceleyebilmelidir.
 
-14. **Çıkış Yapma**
+15. **Çıkış Yapma**
     - Kullanıcıların web sitesinden güvenli bir şekilde çıkış yapabilmeleri için bir seçenek.
    
-15. **İletişim ve Destek**
+16. **İletişim ve Destek**
     - Müşterilere ulaşmak için bir iletişim formu sunulmalıdır.
 
-16. **Personel ve Kulanıcı Yönetimi**
-    - Admin, personel ve kullanıcı hesaplarını oluşturabilir, düzenleyebilir ve silebilir.
+17. **Personel ve Kulanıcı Hesapları Oluşturma**
+    - Admin, personel ve kullanıcı hesaplarını oluşturabilmeli.
 
-17. **Araç Ekleme**
+18. **Personel ve Kullanıcı Hesaplarını Düzenleme**
+    - Admin, personel ve kullanıcı hesaplarını düzenleyebilir.
+
+19. **Personel ve Kullanıcı Hesaplarını Silme**
+    - Admin, personel ve kullanıcı hesaplarını silebilmeli.
+      
+20. **Araç Ekleme**
     - Admin, araçları ekleyebilmelidir. Her araç için detaylı bilgiler (model, marka, plaka numarası, vb.) girilebilmelidir.
 
-18. **Araç Güncelleme**
+20. **Araç Güncelleme**
     - Admin, araçları güncelleyebilmelidir. Her araç için detaylı bilgileri (model, marka, plaka numarası, vb.) güncelleyebilmelidir.
 
-19. **Rezervasyon Yönetimi**
+21. **Rezervasyon Yönetimi**
     - Admin, müşterilerin yaptığı rezervasyonları görüntüleyebilmeli ve yönetebilmelidir. Rezervasyonları onaylama veya reddetme yetkisi olmalıdır.
 
-20. **Fiyatlandırma ve Kampanya Yönetimi**
-    - Admin, araç kiralama fiyatlarını düzenleyebilmeli ve kampanyalar oluşturabilmelidir. Farklı zaman aralıkları için esnek fiyatlandırma seçenekleri sunulmalıdır.
-
-21. **İletişim Yönetimi(Admin Paneli)**
+22. **Fiyatlandırma**
+    - Admin, araç kiralama fiyatlarını düzenleyebilmeli.
+   
+23. **Kampanya Yönetimi**
+    - Admin, kampanyalar oluşturabilmeli.    
+   
+24. **İletişim Yönetimi(Admin Paneli)**
     - Admin, müşterilerden gelen iletişim forumlarına cevap verebilmeli.
 
 ## Gereksinim Dağılımları
