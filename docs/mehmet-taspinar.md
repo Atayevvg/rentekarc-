@@ -13,3 +13,5 @@
 - Kullanıcılar, seçtikleri aracı belirli bir tarih aralığında rezerve edebilmelidir.
 ### 6-Rezervasyon İptali:
 - Kullanıcılar, rezervasyonlarını belirli bir süre içinde iptal edebilmelidir.
+### 7-Ödeme:
+- Kullanıcılar, güvenli bir ödeme yapabilmelidir. 
