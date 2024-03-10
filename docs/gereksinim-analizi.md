@@ -30,7 +30,7 @@
 10. **Kullanıcı Profili Güncelleme**
     - Kullanıcılar, kişisel bilgilerini güncelleyebilmeli.
 
-11. **Kullanıcı Hesap Ayarları Düzenleme
+11. **Kullanıcı Hesap Ayarları Düzenleme**
     - Kullanıcılar, hesap ayarlarını düzenleyebilmeli.
 
 12. **Hesap İşlemleri Geçmişi**
