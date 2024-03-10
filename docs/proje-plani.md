@@ -1,5 +1,4 @@
 
-![Simple Software Development Plan](https://github.com/mehmettaspinarr/rentakarci/assets/47302569/17495b46-9cf9-46ba-a8dd-59dd623ebe79)
 
-![Simple Software Development Plan (1)](https://github.com/mehmettaspinarr/rentakarci/assets/47302569/b29090e1-41ef-4813-9e16-67b7d9c70cf4)
-
+![WhatsApp Image 2024-03-10 at 19 43 38 (1)](https://github.com/Atayevvg/rentekarc-/assets/66472342/ef81c192-8a4e-4158-852a-9ebbe25c7877)
+![WhatsApp Image 2024-03-10 at 19 43 38](https://github.com/Atayevvg/rentekarc-/assets/66472342/12491884-3871-4458-9897-895a849062f0)
