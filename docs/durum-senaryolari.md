@@ -1,5 +1,5 @@
 
-### [Mehmet Taşpınar'ın Senaryoları](mehmet-taspinar-senaryo.md)
+### [Mehmet Taşpınar'ın Senaryoları](mehmet-senaryo.pdf)
 
 ### [Dovran Orazbayev'in Senaryoları](dovran-orazbayev.md)
 
