@@ -3,4 +3,4 @@
 
 ### [Dovran Orazbayev'in Durum Senaryoları]()
 
-### [Gurtgeldi Atayev'in Durum Senaryoları]()
+### [Gurtgeldi Atayev'in Durum Senaryoları](Gurtgeldi-Atayev-Durum-Senaryo.pdf)
