@@ -1,5 +1,5 @@
 
-### [Mehmet Taşpınar'ın Durum Senaryoları](mehmet-senaryo.pdf)
+### [Mehmet Taşpınar'ın Durum Senaryoları](mehmet-taspinar-senaryo1.pdf)
 
 ### [Dovran Orazbayev'in Durum Senaryoları]()
 
