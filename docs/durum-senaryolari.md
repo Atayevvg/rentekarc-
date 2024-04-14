@@ -1,6 +1,6 @@
 
-### [Mehmet Taşpınar'ın Senaryoları](mehmet-senaryo.pdf)
+### [Mehmet Taşpınar'ın Durum Senaryoları](mehmet-senaryo.pdf)
 
-### [Dovran Orazbayev'in Senaryoları](dovran-orazbayev.md)
+### [Dovran Orazbayev'in Durum Senaryoları]()
 
-### [Gurtgeldi Atayev'in Senaryoları](gurtgeldi-atayev.md)
+### [Gurtgeldi Atayev'in Durum Senaryoları]()
