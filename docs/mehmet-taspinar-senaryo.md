@@ -1,2 +1,2 @@
-### [Mehmet Taşpınar'ın Gereksinimleri](mehmet-senaryo.pdf)
+### [Mehmet Taşpınar'ın Durum Senaryoları](mehmet-senaryo.pdf)
 
