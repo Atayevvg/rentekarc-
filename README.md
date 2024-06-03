@@ -45,5 +45,6 @@ Proje ekibimiz aşağıdaki üyelerden oluşmaktadır:
 
 ## 11-[Admin Demo LİNK](https://rentekarc.vercel.app/adminSayfa/admin.html)
 
+Not: Tek bir hesaptan commit yapıldı. Herkes kendi gereksinimine göre kodları yazmıştır.
 
 
