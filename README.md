@@ -42,5 +42,4 @@ Proje ekibimiz aşağıdaki üyelerden oluşmaktadır:
 ## 9-[Geliştirici ve Kullanıcı Dokümantasyonları](docs/dokumantasyon.md)
 
 
- 9-[Demo LİNK: ]()
-
+## 9- Demo LİNK: 
