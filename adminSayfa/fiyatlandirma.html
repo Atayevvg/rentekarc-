@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr" ng-app="carRentalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyatlandırma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>{{message}}</h2>
+        <form>
+            <div class="form-group">
+                <label for="vehicleId">Araç ID:</label>
+                <input type="text" class="form-control" id="vehicleId" placeholder="Araç ID girin" required>
+            </div>
+            <div class="form-group">
+                <label for="dailyPrice">Günlük Fiyat:</label>
+                <input type="number" class="form-control" id="dailyPrice" placeholder="Günlük Fiyat girin" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
+    </div>
+</body>
+</html>

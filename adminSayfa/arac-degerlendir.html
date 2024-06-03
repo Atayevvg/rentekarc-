@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araç Değerlendirme ve Yorumlar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="your-custom-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Araç Değerlendirme ve Yorumlar</h2>
+        <!-- Buraya araç değerlendirme ve yorumlar için gerekli HTML kodları eklenebilir -->
+        <div class="panel panel-default">
+            <div class="panel-heading">Araç Değerlendirmeleri ve Yorumları</div>
+            <div class="panel-body">
+                <!-- Değerlendirme ve yorumları listeleyen bir tablo veya liste eklenebilir -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Kullanıcı</th>
+                            <th>Değerlendirme</th>
+                            <th>Yorum</th>
+                            <th>Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>5/5</td>
+                            <td>Harika araç, kesinlikle tavsiye ederim!</td>
+                            <td>2024-06-06</td>
+                        </tr>
+                        <!-- Diğer değerlendirmeler ve yorumlar buraya eklenebilir -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Değerlendirme ve yorum eklemek için bir form eklenebilir -->
+        <div class="panel panel-default">
+            <div class="panel-heading">Araç Değerlendirme ve Yorum Ekle</div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Kullanıcı Adı:</label>
+                        <input type="text" class="form-control" id="userName">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Değerlendirme:</label>
+                        <input type="number" class="form-control" id="rating" min="1" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Yorum:</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Eğer gerekiyorsa, arka planda yorumların ve değerlendirmelerin işlenmesi için AngularJS veya başka bir JavaScript framework'ü de ekleyebilirsiniz -->
+</body>
+</html>

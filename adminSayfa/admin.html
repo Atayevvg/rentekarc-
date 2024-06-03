@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr" ng-app="carRentalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araba Kiralama Yönetim Paneli</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                   
+                <a class="navbar-brand" href="#/"><img src="logo.png" alt="Araba Kiralama"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/adminSayfa/kampanya-yonetimi.html">Kampanyalar & İndirimler</a></li>
+                    <li><a href="/adminSayfa/arac-degerlendir.html">Araç Değerlendirme & Yorumlar</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hesap Yönetimi <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/adminSayfa/profil-guncelle.html">Profil Güncelleme</a></li>
+                            <li><a href="/adminSayfa/hesap-ayarlar,.html">Hesap Ayarları</a></li>
+                            <li><a href="/adminSayfa/hesap-gecmisi.html">Hesap Geçmişi</a></li>
+                            <li><a href="/adminSayfa/cikis.html">Çıkış Yap</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin Yönetimi <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/adminSayfa/personel-kullanici-duzenleme.html">Personel ve Kullanıcı Hesaplarını Düzenleme</a></li>
+                            <li><a href="/adminSayfa/personel-kullanici-silme.html">Personel ve Kullanıcı Hesaplarını Silme</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Araç Yönetimi <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/adminSayfa/arac-ekleme.html">Araç Ekleme</a></li>
+                            <li><a href="/adminSayfa/arac-guncelleme.html">Araç Güncelleme</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rezervasyon ve Fiyatlandırma <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/adminSayfa/rezervasyon-yonetimi.html">Rezervasyon Yönetimi</a></li>
+                            <li><a href="/adminSayfa/fiyatlandirma.html">Fiyatlandırma</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/adminSayfa/kampanya-yonetimi.html">Kampanya Yönetimi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="view-container container" style="min-height:435px;">
+        <div ng-view class="view-frame"></div>
+    </div>
+    
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular-cookies.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script>
+    <script src="https://github.com/danialfarid/ng-file-upload/releases/download/v12.2.13/ng-file-upload-shim.min.js"></script>
+    <script src="https://github.com/danialfarid/ng-file-upload/releases/download/v12.2.13/ng-file-upload.min.js"></script>
+    <script src="js/common/app.js"></script>
+    <script src="js/common/services.js"></script>
+    <script src="js/common/controllers.js"></script>
+    <script>
+        // router işlevi
+        $(document).ready(function() {
+            $('a[href^="#/"]').on('click', function(event) {
+                event.preventDefault();
+                var href = $(this).attr('href').substring(1) + '.html';
+                $('.view-frame').load(href);
+            });
+        });
+    </script>
+</body>
+</html>

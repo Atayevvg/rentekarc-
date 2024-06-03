@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENTAKARCİ</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <form action="" class="hero-form">
+
+        <div class="input-wrapper">
+            <label for="input-1" class="input-label">Alış Tarihi</label>
+            <input type="date" name="pick-up-date" id="input-1" class="input-field">
+        </div>
+    
+        <div class="input-wrapper">
+            <label for="input-2" class="input-label">İade Tarihi</label>
+            <input type="date" name="return-date" id="input-2" class="input-field">
+        </div>
+    
+        <div class="input-wrapper">
+            <label for="input-3" class="input-label">Ofis</label>
+            <select name="office" id="input-3" class="input-field">
+                <option value="office1">Antalya</option>
+                <option value="office2">Isparta</option>
+                <option value="office3">Ofis 3</option>
+                <!-- Diğer ofis seçeneklerini buraya ekleyin -->
+            </select>
+        </div>
+    
+        <a href="araclar.html" class="btn">Ara</a>
+
+    
+    </form>
+
+
+
+
+<section class="section featured-car" id="featured-car">
+    <div class="container">
+
+      <div class="title-wrapper">
+        <h2 class="h2 section-title">Araçlarımız</h2>
+
+        <a href="#" class="featured-car-link">
+          <span>Daha fazla</span>
+
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+      </div>
+
+      <ul class="featured-car-list">
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">Toyota RAV4</a>
+                </h3>
+
+                <data class="year" value="2021">2021</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Hybrid</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">6.1km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>1500 TL</strong> / Günlük
+                </p>
+
+
+               
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">BMW 3 Series</a>
+                </h3>
+
+                <data class="year" value="2019">2019</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Benzinli</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">8.2km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>1350 TL</strong> / Günlük
+                </p>
+
+                
+
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                height="300" class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">Volkswagen T-Cross</a>
+                </h3>
+
+                <data class="year" value="2020">2020</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Benzinli</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">5.3km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>1600TL</strong> / Günlük
+                </p>
+
+               
+
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440"
+                height="300" class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">Cadillac Escalade</a>
+                </h3>
+
+                <data class="year" value="2020">2020</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Benzinli</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">7.7km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>2000 TL</strong> / Günlük
+                </p>
+
+                
+
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440"
+                height="300" class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">BMW 4 Series GTI</a>
+                </h3>
+
+                <data class="year" value="2021">2021</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Benzinli</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">7.6km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>1800 TL</strong> / Günlük
+                </p>
+
+                
+
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="featured-car-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+                class="w-100">
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="#">BMW 4 Series</a>
+                </h3>
+
+                <data class="year" value="2019">2019</data>
+              </div>
+
+              <ul class="card-list">
+
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+
+                  <span class="card-item-text">5 Yolcu</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+
+                  <span class="card-item-text">Benzinli</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+
+                  <span class="card-item-text">7.2km / 1-litre</span>
+                </li>
+
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                  <span class="card-item-text">Otamatik</span>
+                </li>
+
+              </ul>
+
+              <div class="card-price-wrapper">
+
+                <p class="card-price">
+                  <strong>1850 TL</strong> / Günlük
+                </p>
+
+               
+            
+
+                <button class="btn" onclick="window.open('templates/kiralama.html', '_blank')">Kirala</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+    <!-- HTML içeriği buraya gelecek -->
+</body>
+</html>
+

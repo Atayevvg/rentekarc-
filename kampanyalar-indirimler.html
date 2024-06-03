@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanyalar & İndirimler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets_new/css/custom-styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/"><img src="assets_new/images/logo.png" alt="Araba Kiralama"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/kampanyalar-indirimler">Kampanyalar & İndirimler</a></li>
+                    <li><a href="#/arac-degerlendirme-yorumlar">Araç Değerlendirme & Yorumlar</a></li>
+                    <li><a href="#/profil-guncelleme">Profil Güncelleme</a></li>
+                    <li><a href="#/hesap-ayarları">Hesap Ayarları</a></li>
+                    <li><a href="#/hesap-gecmisi">Hesap Geçmişi</a></li>
+                    <li><a href="#/cikis">Çıkış Yap</a></li>
+                    <li><a href="#/admin-paneli">Admin Paneli</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Kampanyalar & İndirimler</h1>
+        <div class="view-frame">
+            <form id="campaignForm">
+                <div class="form-group">
+                    <label for="title">Başlık</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Açıklama</label>
+                    <textarea class="form-control" id="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="start_date">Başlangıç Tarihi</label>
+                    <input type="date" class="form-control" id="start_date">
+                </div>
+                <div class="form-group">
+                    <label for="end_date">Bitiş Tarihi</label>
+                    <input type="date" class="form-control" id="end_date">
+                </div>
+                <button type="submit" class="btn btn-primary">Kampanya Ekle</button>
+            </form>
+        </div>
+
+        <h2>Mevcut Kampanyalar</h2>
+        <ul id="campaignList" class="list-group"></ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // Kampanya Ekleme Formu Gönderme
+        $('#campaignForm').on('submit', function(event) {
+            event.preventDefault();
+            const formData = {
+                title: $('#title').val(),
+                description: $('#description').val(),
+                start_date: $('#start_date').val(),
+                end_date: $('#end_date').val()
+            };
+            $.post('http://localhost:3000/api/campaigns', formData, function(data) {
+                loadCampaigns();
+                $('#campaignForm')[0].reset();
+            }).fail(function() {
+                alert('Kampanya eklenemedi, sunucuyu kontrol edin.');
+            });
+        });
+
+        // Kampanyaları Yükle
+        function loadCampaigns() {
+            $.get('http://localhost:3000/api/campaigns', function(data) {
+                $('#campaignList').empty();
+                data.forEach(function(campaign) {
+                    $('#campaignList').append('<li class="list-group-item">' + campaign.title + ': ' + campaign.description + '</li>');
+                });
+            }).fail(function() {
+                alert('Kampanyalar yüklenemedi, sunucuyu kontrol edin.');
+            });
+        }
+
+        // Sayfa yüklendiğinde kampanyaları yükle
+        $(document).ready(function() {
+            loadCampaigns();
+        });
+    </script>
+</body>
+</html>

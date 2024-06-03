@@ -1,0 +1,142 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar-inverse {
+    background-color: #2c3e50;
+    border-color: #1a242f;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover,
+.navbar-inverse .navbar-nav > .dropdown > a:focus {
+    background-color: #1a242f;
+}
+
+.navbar-inverse .navbar-nav > .dropdown-menu {
+    background-color: #34495e;
+}
+
+.navbar-inverse .navbar-nav > .dropdown-menu > li > a {
+    color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-nav > .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav > .dropdown-menu > li > a:focus {
+    background-color: #2c3e50;
+}
+
+/* Formlar */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #1a5988;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+/* Tablolar */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}

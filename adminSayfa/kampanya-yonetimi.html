@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr" ng-app="carRentalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanya Yönetimi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>{{message}}</h2>
+        <form>
+            <div class="form-group">
+                <label for="campaignName">Kampanya Adı:</label>
+                <input type="text" class="form-control" id="campaignName" placeholder="Kampanya Adı girin" required>
+            </div>
+            <div class="form-group">
+                <label for="campaignDiscount">İndirim Oranı (%):</label>
+                <input type="number" class="form-control" id="campaignDiscount" placeholder="İndirim Oranı girin" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Başlangıç Tarihi:</label>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">Bitiş Tarihi:</label>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Oluştur</button>
+        </form>
+    </div>
+</body>
+</html>
